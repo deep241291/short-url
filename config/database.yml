@@ -1,0 +1,39 @@
+# SQLite version 3.x
+#   gem install sqlite3
+#
+#   Ensure the SQLite 3 gem is defined in your Gemfile
+#   gem 'sqlite3'
+development:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: url_shortner_development
+  pool: 8
+  username: root
+  password: 
+  # password: R00t@!23     # RC UAT
+  host: 127.0.0.1
+  #socket: /var/run/mysqld/mysqld.sock
+  socket: /tmp/mysql.sock
+test:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: url_shortner_test
+  pool: 8
+  username: root
+  password: 
+  socket: /tmp/mysql.sock
+  # password: R00t@!23     # RC UAT
+  #socket:  /var/run/mysqld/mysqld.sock
+production:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: url_shortner_production
+  pool: 8
+  username: root
+  password: 
+  socket: /tmp/mysql.sock
+  # password: R00t@!23     # RC UAT
+  #socket: /var/run/mysqld/mysqld.sock
